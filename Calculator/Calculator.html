@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="css/reset.css" rel="stylesheet">
+    <link href="css/calculator.css" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/ui/1.10.1/jquery-ui.js"></script>
+
+
+</head>
+
+<body>
+    <div>
+        <div class="cal_cnt">
+            <div class="cal_title">
+                <h2 class="noto">계산기</h2>
+            </div>
+            <div>
+                <div class="cal_top">
+                    <textarea id="cal_num_process" disabled></textarea>
+                    <textarea id="cal_num_result" disabled>0</textarea>
+                </div>
+                <div class="cal_bottom">
+                    <div class="cal_num_pad">
+                        <li>
+                            <ul><button class="cal_num_btn" onclick="btn_click('clear entry')">CE</button></ul>
+                            <ul><button class="cal_num_btn" onclick="btn_click('clear')">C</button></ul>
+                            <ul><button class="cal_num_btn" onclick="btn_click('backspace')">◁</button></ul>
+                        </li>
+                        <li>
+                            <ul><button class="cal_num_btn" onclick="btn_click(7)">7</button></ul>
+                            <ul><button class="cal_num_btn" onclick="btn_click(8)">8</button></ul>
+                            <ul><button class="cal_num_btn" onclick="btn_click(9)">9</button></ul>
+                        </li>
+                        <li>
+                            <ul><button class="cal_num_btn" onclick="btn_click(4)">4</button></ul>
+                            <ul><button class="cal_num_btn" onclick="btn_click(5)">5</button></ul>
+                            <ul><button class="cal_num_btn" onclick="btn_click(6)">6</button></ul>
+                        </li>
+                        <li>
+                            <ul><button class="cal_num_btn" onclick="btn_click(1)">1</button></ul>
+                            <ul><button class="cal_num_btn" onclick="btn_click(2)">2</button></ul>
+                            <ul><button class="cal_num_btn" onclick="btn_click(3)">3</button></ul>
+                        </li>
+                        <li>
+                            <ul><button class="cal_num_btn" onclick="btn_click('±')">±</button></ul>
+                            <ul><button class="cal_num_btn" onclick="btn_click(0)">0</button></ul>
+                            <ul><button class="cal_num_btn" onclick="btn_click('.')">.</button></ul>
+                        </li>
+                    </div>
+                    <div class="cal_op_pad">
+                        <li>
+                            <ul><button class="cal_op_btn" onclick="btn_click('+')">+</button></ul>
+                            <ul><button class="cal_op_btn" onclick="btn_click('-')">-</button></ul>
+                            <ul><button class="cal_op_btn" onclick="btn_click('*')">*</button></ul>
+                            <ul><button class="cal_op_btn" onclick="btn_click('/')">/</button></ul>
+                            <ul><button class="cal_op_btn" onclick="btn_click('=')">=</button></ul>
+                        </li>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="js/Calculator.js"></script>
+
+</html>
